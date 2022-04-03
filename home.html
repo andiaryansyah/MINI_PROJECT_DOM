@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href='https://css.gg/search-loading.css' rel='stylesheet'>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <style>
+        
+        .title{
+            font-family: inherit;
+            font-size: 100%;
+            font-style: inherit;
+            margin: 0;
+            padding: 0;
+            vertical-align: baseline;
+            border: 0;
+            outline: 0;
+            font-size: 70px;
+            line-height: 1.3333;
+            margin-bottom: 0;
+            font-weight: bold;
+            color: black;
+        }
+
+        .link {
+            cursor: pointer;
+            font-weight: bold;
+            color: #fff;
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 25px;
+            text-decoration: none;
+        }
+        
+        .link:hover{
+            color: grey;
+        }
+
+        .site-branding {
+            background: #fff;
+            background-position: center;
+            background-repeat: no-repeat;
+            text-align: center;
+            height: 100%;
+            min-height: 72px;
+            padding: 3em 0 36px;
+            text-align: center;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+
+        ul {
+            display: block;
+            list-style-type: disc;
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            padding-inline-start: 40px;
+        }
+        
+
+        .dflex {
+            display: flex;
+            align-items: center;
+        }
+
+        body {
+            background-color: rgb(240, 236, 236);
+        }
+
+        .t-card {
+            margin-top: 30px;
+            margin-bottom: 30px;
+            font-size: 50px;
+            text-align: center;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: bold;
+            
+        }
+
+        .imgSize {
+            height: 250px; 
+            border-radius: 0 15% 0 15%;
+            border-bottom: 4px solid rgba(0,0,0,.25);
+            border-left: 4px solid rgba(0,0,0,.25);
+        }
+
+        .site-footer {
+            background-color: #2b2a2a;
+            border-top: 1px solid #d9d9d9;
+            color: #fff;
+            padding: 16px 30px;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        .social-links {
+            clear: both;
+            margin: 0 auto 1.5em;
+            display: flex; 
+            justify-content: center; 
+        }
+        
+        .navbar {
+            background-color: #da9555;
+            padding: 0.25em 55px; 
+            display: flex; 
+            justify-content: space-around; 
+            height: 100px; 
+            align-items: center;
+            border-bottom: 3px solid rgba(0,0,0,.25);
+        }
+
+    @media screen and (max-width: 700px) {
+        .navbar{
+            background-color: aqua;
+            padding: 0.25em 55px; 
+            
+        }
+    }
+
+    .imgFooter{
+            height: 70px;
+        }
+
+        .imgFooter:hover{
+        border: 2px solid;
+        border-color: #2b2a2a;
+    }
+
+    .linkContact {
+        color: white;
+        text-decoration: none;
+    }
+
+    .linkContact:hover{
+        color: grey;
+        text-decoration: underline;
+    }
+
+    </style>
+    <title>Home</title>
+</head>
+<body>
+    <div class="container-xl" style="background-color: white;">
+        <div class="site-branding">
+                <h1 class="title">RECIPES INDONESIA FOOD</h1>
+        </div>
+
+        <nav class="navbar navbar-expand-lg navbar-light" >
+            <div class="container-fluid" >
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#menu1" aria-controls="menu1"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <b>Menu</b> 
+                    <span class="navbar-toggler-icon" ></span>
+                </button>
+                <div class="collapse navbar-collapse" id="menu1">
+                    <ul class="collapse navbar-collapse" style="display: flex; justify-content: space-evenly; align-items: center; color:#d9d9d9;">
+                        <li style="padding-left: 20px;">
+                            <a class="link" href="home.html" >Home</a>
+                        </li>
+                        <li style="padding-left: 20px;">
+                            <a class="link" href="about.html" aria-current="page">About</a>
+                        </li>
+                        <li style="padding-left: 20px;">
+                            <a class="link" href="contact.html" aria-current="page">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="3000">
+                    <img src="assets/2.jpg" class="d-block w-100" style="height: 600px;" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img src="assets/3.jpg" class="d-block w-100" style="height: 600px;" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        
+        <div class="alert alert-info" style="margin-top: 5px;">
+            Coming soon for update recipe !
+        </div>
+
+        <div class="input-group" style="padding-Right: 70%; margin-top: 20px;">
+            <input class="form-control form-control-sm" type="search" placeholder="Search Recipe" >
+            <button class="btn btn-primary" type="button" id="button-addon2">
+                <i class="gg-search-loading"></i>
+            </button>
+        </div>
+
+        <div class="row" >
+            <div class="col-12 row konten" >
+                <div class="row konten ">
+                    <div class="col-4" style=" cursor: pointer; margin-bottom: 40px;" >
+                        <h5 class="card-title t-card">Rendang</h5>
+                        <img src="assets/resep-rendang.jpg" class="card-img-top imgSize">
+                        <div class="card-body">
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                        </div>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal1">Open Recipe</button>
+                    
+                    </div>
+                    <div class="col-4" style=" cursor: pointer; margin-bottom: 40px;">
+                        <h5 class="card-title t-card">Sate Ayam</h5>
+                        <img src="assets/Sate-ayam.jpg" class="card-img-top imgSize" >
+                        <div class="card-body">
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit</p>
+                        </div>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal2">Open Recipe</button>
+                    </div>
+                    <div class="col-4" style=" cursor: pointer; margin-bottom: 40px;">
+                        <h5 class="card-title t-card">Soto Ayam</h5>
+                        <img src="assets/soto-ayam.jpg" class="card-img-top imgSize" >
+                        <div class="card-body">
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                        </div>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal3">Open Recipe</button>
+                    </div>
+                    
+                    <div class="col-4" style=" cursor: pointer; margin-bottom: 40px;" >
+                        <h5 class="card-title t-card">Rawon</h5>
+                        <img src="assets/rawon.jpg" class="card-img-top imgSize">
+                        <div class="card-body">
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                        </div>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal4">Open Recipe</button>
+                    
+                    </div>
+                    <div class="col-4" style=" cursor: pointer; margin-bottom: 40px;">
+                        <h5 class="card-title t-card">Ayam Betutu</h5>
+                        <img src="assets/ayam-betutu.jpg" class="card-img-top imgSize">
+                        <div class="card-body">
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                        </div>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal5">Open Recipe</button>
+                    </div>
+                    <div class="col-4" style=" cursor: pointer; margin-bottom: 40px;">
+                        <h5 class="card-title t-card">Mie Aceh</h5>
+                        <img src="assets/mie-aceh.jpg" class="card-img-top imgSize">
+                        <div class="card-body">
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                        </div>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal6">Open Recipe</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modal1Label">Rendang Recipe</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                            <b> Bahan :</b>
+                            <ul>
+                                <li>1 kg daging sapi</li>
+                                <li>3 butir kelapa, diambil santan kental dan santan encernya</li>
+                                <li>4 lembar daun jeruk</li>
+                                <li>3 batang serai, memarkan</li>
+                                <li>4 butir asam kandis</li>
+                                <li>100 ml minyak goreng</li>
+                                <li>5 gram garamBumbu rendang daging sapi 1 Kg</li>
+                                <li>60 gram bawang merah</li>
+                                <li>50 gram bawang putih</li>
+                                <li>250 gram cabai merah besar</li>
+                                <li>100 gram lengkuas</li>
+                                <li>50 gram kemiri</li>
+                                <li>2 gram cengkeh</li>
+                            </ul>
+                            <b> Cara Membuat :</b>
+                            <ul>
+                                <li>Haluskan semua bahan Bumbu dengan diulek atau diblender.</li>
+                                <li>Tumis bumbu dengan sedikit minyak goreng hingga wangi.</li>
+                                <li> Masukkan batang serai, daun jeruk, asam kandis dan garam, aduk rata.</li>
+                                <li>Tuangi santan dan dididihkan, masukkan daging.</li>
+                                <li>Masak dengan api kecil selama beberapa jam sampai daging empuk dan bumbu kecokelatan sesuai selera.</li>
+                            </ul>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="modal2Label" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modal2Label">Sate Ayam Recipe</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                            <b> Bahan :</b>
+                            <ul>
+                                <li> 500 gram dada ayam,, bersihkan lalu potong tipis memanjang
+                                    Tusukan sate</li>
+                            </ul>
+                            <b>Bumbu Marinasi (haluskan):</b> 
+                            <ul>
+                                <li>5 butir bawang merah</li>
+                                <li>2 siung bawang putih</li>
+                                <li>1 sdt ketumbar</li>
+                                <li>2 butir kemiri</li>
+                                <li>1 sdm kecap manis</li>
+                                <li>2 sdm saus tiram</li>
+                                <li>1 sdm air jeruk lemon</li>
+                                <li>1/4 keping gula merah</li>
+                            </ul>
+                            <b>Bumbu Oles:</b>
+                            <ul>
+                                <li>4 sdm Kecap manis</li>
+                                <li>1 sdm saus tiram</li>
+                                <li>1 sdm margarin</li>
+                            </ul>
+                            <b>Bahan Bumbu Kacang</b>
+                            <ul>
+                                <li>3 siung bawang putih, iris tipis lalu goreng, angkat dan haluskan.</li>
+                                <li>5 buah cabai keriting, haluskan</li>
+                                <li>150 gram kacang tanah, goreng dan haluskan</li>
+                                <li>200 ml santan encer</li>
+                                <li>Secukupnya gula, garam, kecap manis</li>
+                                <li>Secukupnya minyak untuk menumis</li>
+                            </ul>
+                            <b>Cara Membuat Bumbu Kacang:</b><br>
+                            <p class="card-text" style="text-align: justify;">
+                                Iris tipis bawang putih, lalu goreng sebentar, angkat dan haluskan.
+                                Panaskan sedikit minyak, lalu tumis bawang putih dan cabai keriting yang telah dihaluskan hingga harum.
+                                Tambahkan kacang tanah halus dan santan. Aduk hingga rata, tambahkan gula, garam dan kecap lalu masak hingga mendidih dan bumbu kacang mengental.
+                                Angkat dan sisihkan.  
+                            </p>       
+                            <b>Cara Membuat Sate Ayam:</b> <br>       
+                            <p class="card-text" style="text-align: justify;">
+                                Marinasi daging ayam dengan bumbu marinasi semalaman. Setelah itu, tusuk daging ayam dengan tusukan sate.
+                                Olesi sate dengan bumbu oles, dan bakar diatas alat pemanggang. Bolak-balik sate dengan terus diolesi bumbu oles, dan bakar hingga matang.
+                                Angkat dan sajikan dengan siraman bumbu kacang dan sambal kecap, serta beri taburan bawang goreng dan perasan jeruk limo.
+                                Bumbu Kacang
+                            </p>   
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="modal3Label" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modal3Label">Soto Ayam Recipe</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                            <div class="modal-body">
+                                <b>Bahan :</b>
+                                <ul>
+                                    <li>1 ekor (900 gr) ayam, belah menjadi 4 bagian</li>
+                                    <li>2 liter air </li>
+                                    <li> 2 cm jahe</li>
+                                    <li>3 batang serai, memarkan</li>
+                                    <li>1 ½  sdm garam</li>
+                                    <li>½  sdt  lada putih bubuk</li>
+                                    <li>1 sdm gula pasir</li>
+                                    <li>10 lembar daun jeruk, buang tulang daunnya</li>
+                                    <li>2 sdm minyak untuk menumis</li>
+                                    <li>50 ml minyak untuk menggoreng</li>
+                                </ul> 
+                                <b>Bahan Bumbu Halus (haluskan dengan blender):</b>
+                                <ul>
+                                    <li> 5 butir kemiri, sangrai</li>
+                                    <li>3 cm kunyit, bakar</li>
+                                    <li>10 butir bawang merah</li>
+                                    <li>6 siung bawang putih</li>
+                                </ul> 
+                                <b>Bahan Pelengkap:</b> 
+                                    <ul>
+                                        <li>50 gr soun, rendam sampai mekar</li>
+                                        <li>2 batang seledri, cincang kasar</li>
+                                        <li>2 buah tomat, potong-potong</li>
+                                        <li>3 butir telur rebus</li>
+                                        <li>2 sendok makan bawang merah goreng</li>
+                                        <li>100 gr taoge</li>
+                                        <li>100 gr kol, iris halus</li>
+                                        <li>3 sdm Bango Kecap Manis</li>
+                                    </ul>
+                                    <b>Bahan Sambal:</b>
+                                    <ul>
+                                        <li>60 gr cabai rawit merah</li>
+                                        <li>4 buah cabai merah keriting</li>
+                                        <li>3 siung bawang putih</li>
+                                        <li>½  sdt garam</li>
+                                    </ul>
+                                    <b>Cara Memasak</b>
+                                    <ul style="text-align: justify;">
+                                        <li>Di dalam panci rebus air dan ayam bersama jahe selama 15 menit.</li>
+                                        <li>Sembari menunggu ayam rebus, di wajan panaskan 5 sdm minyak. Tumis bumbu halus dan serai sampai harum. Tuang ke dalam rebusan ayam.</li>
+                                        <li>Masukkan garam, merica bubuk, dan gula pasir. Masak sampai kuah berwarna kuning dan ayam matang. Angkat ayam dan sisihkan kaldunya.</li>
+                                        <li>Di wajan penggorengan masukkan 50 ml minyak. Goreng ayam di dalam minyak panas sampai kecokelatan dengan cara dibolak balik. Setelah matang suwir-suwir ayam lalu sisihkan.</li>
+                                        <li>Untuk membuat sambal, rebus cabai rawit, cabai merah, dan bawang putih sampai layu. Angkat. Tambahkan garam. Haluskan dengan blender.</li>
+                                        <li>Sajikan kuah soto bersama ayam suwir, pelengkap, Bango Kecap Manis dan sambal.</li>
+                                    </ul>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="modal4" tabindex="-1" aria-labelledby="modal4Label" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modal4Label">Rawon Recipe</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <b>Bahan :</b>
+                        <ul>
+                                <li>Daging sapi - 1/2 kg</li>
+                                <li>Tauge pendek, seduh air panas - 5 sdm</li>
+                                <li>Daun salam - 2 lembar</li>
+                                <li>Daun jeruk - 3 lembar</li>
+                                <li>Serai - 2 batang</li>
+                                <li>Lengkuas, memarkan - 2 cm</li>
+                                <li>Garam - 2 sdt</li>
+                                <li>Gula merah - 1 sdt</li>
+                                <li>Kaldu sapi bubuk - 1 sdt</li>
+                                <li>Minyak goreng - 2 sdm</li>
+                                <li>Air - 2 liter</li>
+                        </ul> 
+                        <b>Bahan Bumbu Halus:</b>
+                        <ul>
+                                <li>Bawang merah - 7 siung</li>
+                                <li>Bawang putih - 5 siung</li>
+                                <li>Merica - 1/2 sdt</li>
+                                <li>Ketumbar - 1/4 sdt</li>
+                                <li>Kunyit - 2 cm</li>
+                                <li>Jahe - 2 cm</li>
+                                <li>Kemiri, sangrai - 2 butir</li>
+                                <li>Kluwek - 5 butir</li>
+                        </ul> 
+                        <b>Bahan Pelengkap:</b> 
+                            <ul>
+                                <li>Daun bawang, rajang kasar - 1 batang</li>
+                                <li>Bawang merah goreng - 1 sdm</li>
+                                <li>Telur asin, belah 2 bagian - 3 butir</li>
+                                <li> Sambal cabe rawit - secukupnya</li>
+                            </ul>
+                            <b>Cara Memasak :</b>
+                            <ul style="text-align: justify;">
+                                <li>Masak air sampai mendidih, masukkan daging sapi, rebus sampai berubah warna.</li>
+                                <li>Buang busa kotoran yang mengapung. Lanjutkan merebus sampai daging empuk.</li>
+                                <li>Buang kulit kluwek, ambil dagingnya dan rendam air panas sampai lembut. Haluskan bersama bumbu halus. Lalu tumis bumbu halus sampai harum.</li>
+                                <li>Masukkan daun salam, serai, daun jeruk, lengkuas, aduk sebentar.</li>
+                                <li>Masukkan tumisan bumbu ke dalam rebusan daging.</li>
+                                <li>Bumbui dengan garam, kaldu sapi bubuk, dan gula merah, aduk rata kemudian koreksi rasa.</li>
+                                <li>Angkat dan potong-potong daging.</li>
+                                <li>Masukkan kembali ke air rebusan. Masak lagi sebentar.</li>
+                                <li>Angkat, sajikan dengan telur asin, tauge, taburan daun bawang, bawang merah goreng, sambal dan perasan jeruk nipis.</li>
+                            </ul>
+                    </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="modal5" tabindex="-1" aria-labelledby="modal5Label" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modal5Label">Ayam Betutu Recipe</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <b>Bahan :</b>
+                        <ul>
+                                <li>1 ekor ayam kampung utuh</li>
+                                <li>2 buah jeruk nipis, ambil airnya</li>
+                                <li>50 g daun belimbing wuluh, rebus, cincang kasar</li>
+                                <li>2 sdt garam</li>
+                                <li>2 batang serai, ambil bagian putih, memarkan</li>
+                                <li>30 g gula Jawa, sisir</li>
+                                <li>3 lembar daun jeruk</li>
+                                <li>2 lembar daun pisang</li>
+                                <li>Minyak goreng untuk menumis</li>
+                        </ul> 
+                        <b>Bahan Bumbu Halus:</b>
+                        <ul>
+                                <li>10 butir bawang merah</li>
+                                <li>6 siung bawang putih</li>
+                                <li>12 buah cabai merah keriting</li>
+                                <li>1 sdt merica butiran</li>
+                                <li>2 cm kunyit bakar</li>
+                                <li>2 cm kencur</li>
+                                <li>2 cm jahe, parut</li>
+                                <li>2 cm lengkuas, parut</li>
+                                <li>2 sdt terasi bakar</li>
+                                <li>1 sdt ketumbar</li>
+                                <li>1 sdm garam</li>
+                        </ul> 
+                            <b>Cara Memasak :</b>
+                            <ul style="text-align: justify;">
+                                <li>Cuci bersih ayam kampung utuh. Jika tak suka leher, kepala dan cekernya bisa disisihkan.</li>
+                                <li>Lumuri ayam utuh dengan air jeruk nipis dan garam. Biarkan lebih kurang 30 menit.</li>
+                                <li>Panaskan 4 sdm minyak, tumis bumbu halus, serai dan irisan gula merah hingga harum. Angkat dan sisihkan.</li>
+                                <li>Bagi bumbu yang sudah matang menjadi 2 bagian.</li>
+                                <li>Campur satu bagian bumbu matang dengan duan belimbing sayur dan daun jeruk.</li>
+                                <li>Satu bagian bumbu sisanya lumurkan ke seluruh badan ayam.</li>
+                                <li>Tusuk-tusuk dengan garpu serta remas-remas agar bumbu meyerap ke bagian daging ayam.</li>
+                                <li>Masukkan daun belimbing berbumbu ke dalam perut ayam hingga padat. Lipast sayapnya ke arah belakang.</li>
+                                <li>Bungkus dengan daun pisang dan kukus selama 1 ½ jam, angkat lalu dinginkan.</li>
+                                <li>Panggang ayam kukus tadi di dalam oven panas hingga daun pembungkus ayam berwarna kecokelatan.</li>
+                                <li>Angkat, buka bungkusannya. Sajikan hangat.</li>
+                            </ul>
+                    </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="modal6" tabindex="-1" aria-labelledby="modal6Label" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modal6Label">Mie Aceh Recipe</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div><div class="modal-body">
+                        <b>Bahan :</b>
+                        <ul>
+                            <li>200 gram daging kambing (bisa di ganti dengan daging sapi)</li>
+                            <li>300 gram mie basah besar, diseduh air panas</li>
+                            <li>4 siung bawang putih, diiris tipis-tipis</li>
+                            <li>3 butir bawang merah, diiris tipis-tipis</li>
+                            <li>1 buah tomat, dipotong-potong</li>
+                            <li>750 ml air</li>
+                            <li>300 ml kaldu sapi</li>
+                            <li>50 gram toge</li>
+                            <li>50 gram kol, diiris-iris tipis</li>
+                            <li>1 1/2 sendok makan Kecap Manis Bango</li>
+                            <li>1/2 sendok makan garam</li>
+                            <li>1 sendok teh gula pasir</li>
+                            <li>3 sendok makan minyak untuk menumis</li>
+                            <li>1/2 sendok teh cuka</li>
+                            <li>1 batang daun bawang, dipotong cacah sepanjang 1 cm</li>
+                            <li>1 lembar daun salam</li>
+                        </ul>
+                        <b>Bahan Bumbu Halus:</b>
+                        <ul>
+                                <li>6 butir bawang merah</li>
+                                <li>4 siung bawang putih</li>
+                                <li>1 butir kapulaga</li>
+                                <li>4 buah cabe merah biasa, buang bijinya</li>
+                                <li>2 cm kunyit, dibakar</li>
+                                <li>1/4 sendok teh jintan</li>
+                                <li>1/2 sendok teh lada bubuk putih</li>
+                        </ul>
+                        <b>Bahan Acar Mentimun:</b>
+                        <ul>
+                                <li>3 buah mentimun, dibuang bijinya, potong kecil-kecil</li>
+                                <li>1 sendok teh gula pasir (boleh tidak ada, sesuai selera)</li>
+                                <li>1 sendok teh cuka</li>
+                                <li>1/2 sendok teh garam</li>
+                        </ul>  
+
+                        <b>Bahan Pelengkap:</b> 
+                            <ul>
+                                <li>100 gram emping goreng</li>
+                                <li>Bawang goreng secukupnya</li>
+                                <li>Cabe rawit</li>
+                                <li>Bawang merah mentah</li>
+                                <li>Dan irisan jeruk nipis</li>
+                            </ul>
+                            <b>Cara Memasak :</b>
+                            <ul style="text-align: justify;">
+                                <li>Rebus daging kambing dan daun salam dalam air. Setelah matang buang airnya. Potong-potong. Sisihkan.</li>
+                                <li>Tumis bawang putih, bawang merah, dan bumbu yang telah dihaluskan sampai beraroma harum. Tambahkan daging kambing tadi. Aduk sampai rata.</li>
+                                <li>Tambahkan tomat, toge, dan kol. Aduk hingga layu.</li>
+                                <li>Masukkan kecap manis, garam, gula pasir, kaldu sapi, dan cuka. Masak sampai meresap.</li>
+                                <li>Masukkan mie. Masak sampai matang. Menjelang diangkat, taburkan daun bawang. Aduk sampai rata.</li>
+                                <li>Sajikan mie Aceh dengan acar mentimun, emping goreng, taburan bawang goreng, bawang merah mentah, cabe rawit hijau, dan perasan jeruk nipis.</li>
+                            </ul>
+                    </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-xl" style="background: rgb(87, 87, 87); padding: 2% 0; height: 370px; color: white;">
+                <div class="container">
+                    <div class="row">
+                        <div class="col footer-top">
+                            <h3>Contact Info</h3>
+                            <div class="footer-list">
+                                <ul>
+                                    <li>Email: <a href="#" class="linkContact">aariansyah70@gmail.com</a></li> 
+                                    <li>Website : <a href="#" class="linkContact">andiaryansyah@programmer.org</a></li>
+                                    <li>Github : <a href="#" class="linkContact">Andi Aryansyah</a></li>
+                                    <li>Linkedln : <a href="https://linkedin.com/in/andi-aryansyah-a6039422a" class="linkContact">Andi Aryansyah</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col footer-top">
+                            <h3>About Us</h3>
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas dolores, 
+                                minima inventore adipisci dolorem nesciunt explicabo ipsa, 
+                                distinctio recusandae necessitatibus omnis debitis porro nisi dolore esse rerum accusamus, ullam nobis.
+                            </p>
+                            <button class="btn btn-light" type="button">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <footer class="site-footer container-xl"  >
+                <div class="social-links">
+                    <div>
+                        <a href="https://facebook.com/">
+                            <img src="assets/facebook.png" class="imgFooter" alt="">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://twitter.com/">
+                            <img src="assets/twitter.png" class="imgFooter" alt="">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.tiktok.com/">
+                            <img src="assets/tiktok.png" class="imgFooter" alt="">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.instagram.com/">
+                            <img src="assets/insta.png" class="imgFooter" alt="">
+                        </a>
+                    </div>
+                </div>
+            </footer>
+    
+</body>
+</html>

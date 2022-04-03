@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <style>
+        
+        .title{
+            font-family: inherit;
+            font-size: 100%;
+            font-style: inherit;
+            margin: 0;
+            padding: 0;
+            vertical-align: baseline;
+            border: 0;
+            outline: 0;
+            font-size: 70px;
+            line-height: 1.3333;
+            margin-bottom: 0;
+            font-weight: bold;
+        }
+
+        .link {
+            cursor: pointer;
+            font-weight: bold;
+            color: #fff;
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 25px;
+            text-decoration: none;
+        }
+        
+        .link:hover{
+            color: grey;
+        }
+
+        .site-branding {
+            background: #fff;
+            background-position: center;
+            background-repeat: no-repeat;
+            text-align: center;
+            height: 100%;
+            min-height: 72px;
+            padding: 3em 0 36px;
+            text-align: center;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+
+        ul {
+            display: block;
+            list-style-type: disc;
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            padding-inline-start: 40px;
+        }
+        
+
+        .dflex {
+            display: flex;
+            align-items: center;
+        }
+
+        body {
+            background-color: rgb(240, 236, 236);
+        }
+
+        .site-footer {
+            background-color: #404040;
+            border-top: 1px solid #d9d9d9;
+            color: #fff;
+            font-size: 15.6px;
+            padding: 24px 34px;
+            text-align: center;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .social-links {
+            clear: both;
+            margin: 0 auto 1.5em;
+            display: flex; 
+            justify-content: center; 
+        }
+        
+        .navbar {
+            background-color: #da9555;
+            padding: 0.25em 55px; 
+            display: flex; 
+            justify-content: space-around; 
+            height: 100px; 
+            align-items: center;
+            border-bottom: 3px solid rgba(0,0,0,.25);
+        }
+
+        @media screen and (max-width: 700px) {
+            .navbar{
+                background-color: aqua;
+                padding: 0.25em 55px; 
+            }
+        }
+
+        .dAbout {
+            padding-left: 100px;
+            padding-bottom: 50%;
+        }
+
+        .imgFooter{
+            height: 70px;
+        }
+
+        .imgFooter:hover{
+        border: 2px solid;
+        border-color: #404040;
+    }
+
+    .linkContact {
+        color: white;
+        text-decoration: none;
+    }
+
+    .linkContact:hover{
+        color: grey;
+        text-decoration: underline;
+    }
+
+    </style>
+    <title>About Us</title>
+</head>
+<body>
+    <div class="container-xl" style="background-color: white;">
+        <div class="site-branding">
+                <h1 class="title">RECIPES INDONESIA FOOD</h1>
+        </div>
+
+        <nav class="navbar navbar-expand-lg navbar-light" >
+            <div class="container-fluid" >
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#menu1" aria-controls="menu1"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <b>Menu</b> 
+                    <span class="navbar-toggler-icon" ></span>
+                </button>
+                <div class="collapse navbar-collapse" id="menu1">
+                    <ul class="collapse navbar-collapse" style="display: flex; justify-content: space-evenly; align-items: center; color:#d9d9d9;">
+                        <li style="padding-left: 20px;">
+                            <a class="link" href="home.html" >Home</a>
+                        </li>
+                        <li style="padding-left: 20px;">
+                            <a class="link" href="about.html" aria-current="page">About</a>
+                        </li>
+                        <li style="padding-left: 20px;">
+                            <a class="link" href="contact.html" aria-current="page">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    
+        <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="3000">
+                    <img src="assets/5.jpg" class="d-block w-100" style="height: 600px;" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img src="assets/4.jpg" class="d-block w-100" style="height: 600px;" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <div class="dAbout">
+            <h3 style="margin-top: 30px;"><b>ABOUT US</b></h3>
+           <div>
+               <p style="text-align:justify ; padding-right: 10%; padding-left: 2%;">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                    Ratione exercitationem magnam odio sapiente vero debitis, minus delectus. 
+                    Et tempore eligendi deserunt, modi quis ratione cum quia dolorum omnis at exercitationem.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias sint quis dolorem deleniti minima dignissimos eum voluptate inventore.
+                    Ipsam alias con sectetur, earum fugiat nemo odio inventore non. Porro, ab quasi.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, omnis ratione. Totam blanditiis impedit unde possimus neque repellat quae. 
+                    Eligendi quam assumenda unde expedita sequi officia eum maxime laboriosam enim?
+               </p>
+           </div>
+            <br>
+        </div>
+    </div>
+
+    <div class="container-xl" style="background: rgb(87, 87, 87); padding: 2% 0; height: 370px; color: white;">
+        <div class="container">
+            <div class="row">
+                <div class="col footer-top">
+                    <h3>Contact Info</h3>
+                    <div class="footer-list">
+                        <ul>
+                            <li>Email: <a href="#" class="linkContact">aariansyah70@gmail.com</a></li> 
+                            <li>Website : <a href="#" class="linkContact">andiaryansyah@programmer.org</a></li>
+                            <li>Github : <a href="#" class="linkContact">Andi Aryansyah</a></li>
+                            <li>Linkedln : <a href="https://linkedin.com/in/andi-aryansyah-a6039422a" class="linkContact">Andi Aryansyah</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col footer-top">
+                    <h3>About Us</h3>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas dolores, 
+                        minima inventore adipisci dolorem nesciunt explicabo ipsa, 
+                        distinctio recusandae necessitatibus omnis debitis porro nisi dolore esse rerum accusamus, ullam nobis.
+                    </p>
+                    <button class="btn btn-light" type="button">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+            <footer class="site-footer container-xl"  >
+                <div class="social-links">
+                    <div>
+                        <a href="https://facebook.com/">
+                            <img src="assets/facebook.png" class="imgFooter" alt="">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://twitter.com/">
+                            <img src="assets/twitter.png" class="imgFooter" alt="">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.tiktok.com/">
+                            <img src="assets/tiktok.png" class="imgFooter" alt="">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.instagram.com/">
+                            <img src="assets/insta.png" class="imgFooter" alt="">
+                        </a>
+                    </div>
+                </div>
+            </footer>
+</body>
+</html>
